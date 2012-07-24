@@ -1,0 +1,5 @@
+cron:
+  - description: IlFo Cronzorz
+    url: /updatercron
+    schedule: every day 18:30
+    timezone: America/Tijuana

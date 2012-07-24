@@ -1,0 +1,37 @@
+<html>
+  <head>
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet'
+    type='text/css'>
+    <link rel=stylesheet href="/stylesheets/ilfosheet.css" type="text/css" media=screen>
+  </head>
+  <body>
+    <img src="/images/ilfornaio_logo.jpg" width="200px" />
+    <h2>Score Summary</h2>
+    <strong>Last Updated:</strong> {{ updated }}</p>
+    <table id="hor-minimalist-a" style="margin:0px">
+      <tr>
+          <th scope="col" valign="bottom"><font size="4px"><b>Location<b></font></th>
+          <th scope="col"><img src="/images/citysearch_logo.gif" height=50px /></th>
+          <th scope="col"><img src="/images/opentable_logo.jpg" height=50px /></th>
+          <th scope="col"><img src="/images/tripadvisor_logo.gif" height=50px /></th>
+          <th scope="col"><img src="/images/urbanspoon_logo.jpg" height=50px /></th>
+          <th scope="col"><img src="/images/yelp_logo.jpg" height=50px /></th>
+          <th scope="col"><img src="/images/zagat_logo.jpg" height=50px /></th>
+      </tr>
+
+      {% for score in scores %}
+      <tr>
+        {% for location, score_vals in score.items %}
+        <td id="location"><strong>{{ location }}</strong></td>
+        <td>{{ score_vals.CitySearch }}</td>
+        <td>{{ score_vals.OpenTable }}</td>
+        <td>{{ score_vals.TripAdvisor }}</td>
+        <td>{{ score_vals.UrbanSpoon }}</td>
+        <td>{{ score_vals.Yelp }}</td>
+        <td>{{ score_vals.Zagat }}</td>
+        {% endfor %}
+      </tr>
+      {% endfor %}
+    </table>
+  </body>
+</html>

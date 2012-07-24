@@ -1,0 +1,53 @@
+body {
+  font-family: 'Open Sans', sans-serif;
+}
+
+h2 {
+  margin-top: 3px;
+  margin-bottom: 3px;
+  font-size:20px;
+  color:#039;
+}
+
+p {
+  font-size:14px;
+  margin-top: 2px;
+  margin-bottom: 0px;
+}
+
+div.scroll {
+  height:600px;
+  width: 800px;
+  overflow: auto;
+}
+
+#hor-minimalist-a {
+  font-size:12px;
+  border-collapse:collapse;
+  text-align:left;margin:20px;
+}
+
+#hor-minimalist-a th {
+  font-size:14px;
+  font-weight:normal;
+  color:#039;
+  border-bottom:2px solid #6678b1;
+  padding:10px 8px;
+}
+
+#hor-minimalist-a td {
+  font-size:14px;
+  vertical-align: middle;
+  text-align: center;
+  color:#669;padding:9px 8px 0;
+  border-bottom:1px solid #6678b1;
+  padding:8px 8px;
+}
+
+#hor-minimalist-a #location {
+  text-align:left;
+}
+
+#hor-minimalist-a tbody tr:hover td {
+  color:#009;
+}
